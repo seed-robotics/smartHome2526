@@ -1,5 +1,5 @@
 int ranTime = 0;
-int startTime = 0;
+unsigned long startTime = 0;
 float reacTime = 0;
 int i;
 
@@ -7,6 +7,7 @@ void setup() {
 pinMode(13,INPUT);
 pinMode(12,OUTPUT);
 Serial.begin(9600);
+randomSeed(analogRead(A0));
 }
 
 void loop() {
@@ -16,7 +17,7 @@ ranTime = random(1000, 3000);
 delay(ranTime);
 startTime = millis();
 digitalWrite(12,HIGH);
-while (digitalRead(13) != 1){}
+while (digitalRead(13) != HIGH) {}
 reacTime = (millis() - startTime)/1000.0;
 Serial.print("Your time was: ");Serial.print(reacTime);Serial.println("seconds");
 digitalWrite(12,LOW);

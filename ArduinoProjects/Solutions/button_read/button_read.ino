@@ -13,6 +13,6 @@ void setup() {
 }
 
 void loop() {
-  Serial.println(digitalRead(13);
+  Serial.println(digitalRead(13));
   delay(50);
 }

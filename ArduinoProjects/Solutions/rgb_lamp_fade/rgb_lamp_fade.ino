@@ -16,49 +16,49 @@ Serial.begin(9600);
 void loop() {
   
   Serial.println("for1"); // it prints anything between the ()
-  for(int i=0; i<255; i++) {
+  for(int i=0; i<=255; i++) {
     analogWrite(RED, i); // red gradually OFF
     analogWrite(GREEN, 255-i); // green gradually ON
     analogWrite(BLUE, 255-i); // blue gradually ON
     delay(DELAY); // wait before next transition
   }
   Serial.println("for2");
-   for(int i=0; i<255; i++) {
+  for(int i=0; i<=255; i++) {
     analogWrite(RED, 255-i); // red gradually ON
     analogWrite(GREEN, i); // green gradually OFF
     analogWrite(BLUE, i); // Blue gradually OFF
     delay(DELAY); // wait before next transition
    }
    Serial.println("for3");
-   for(int i=0; i<255; i++) {
+  for(int i=0; i<=255; i++) {
     analogWrite(RED, i); // red gradually OFF
     analogWrite(GREEN, 255-i); // green gradually ON
     analogWrite(BLUE, 255); // blue OFF
     delay(DELAY); // wait before next transition
    }
    Serial.println("for4");
-  for(int i=0; i<255; i++) {
+  for(int i=0; i<=255; i++) {
     analogWrite(RED, 255); // red OFF
     analogWrite(GREEN, i); // green gradually OFF
     analogWrite(BLUE, 255-i); // blue gradually ON 
     delay(DELAY); // wait before next transition
 }
 Serial.println("for5");
-for(int i=0; i<255; i++) {
+for(int i=0; i<=255; i++) {
     analogWrite(RED, 255); // red OFF
     analogWrite(GREEN, 255-i); // green gradually ON
     analogWrite(BLUE, i); // blue gradually OFF
     delay(DELAY); // wait before next transition
 }
 Serial.println("for6");
-for(int i=0; i<255; i++) {
+for(int i=0; i<=255; i++) {
     analogWrite(RED, 255-i); // red gradually ON
     analogWrite(GREEN, i); // green gradually OFF
     analogWrite(BLUE, 255); // blue OFF
     delay(DELAY); // wait before next transition
 }
 Serial.println("for7");
-for(int i=0; i<255; i++) {
+for(int i=0; i<=255; i++) {
     analogWrite(RED, i); // red gradually OFF
     analogWrite(GREEN, 255); // green OFF
     analogWrite(BLUE, 255); // blue OFF

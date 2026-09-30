@@ -1,4 +1,3 @@
-
 //  13   5V
 //   |   |
 //  -------
@@ -11,7 +10,7 @@ float rTime;
 int ledstate=0;
 float bTime = 100.00;
 void setup() {
-  pinMode(13, INPUT_PULLUP); 
+  pinMode(13, INPUT);
   pinMode(12,OUTPUT);
   Serial.begin(9600);
 }
@@ -32,7 +31,7 @@ void loop() {
   delay(random(1000,5000));
   digitalWrite(12,HIGH);
   time = millis();
-  while (digitalRead(13)==0){
+  while (digitalRead(13)==LOW){
     
   }
   digitalWrite(12,LOW);
