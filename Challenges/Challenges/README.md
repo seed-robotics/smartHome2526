@@ -2,7 +2,7 @@
 
 Try the five tasks under a lesson in order. Each task tells you what to connect, what to change in the program, and what you should see or hear. Open the linked `.ino` file for a complete example solution. Pin numbers are examples: follow your kit wiring and change the constants if needed.
 
-For Arduino basics, see the [general guide](../../README.md). For lesson explanations and the complete lesson sketches, see the [Lesson Material guide](../../LessonMaterial/README.md).
+For Arduino basics, see the [general guide](../../README.md). For lesson explanations and the complete lesson sketches, see the [Lesson Materials guide](../../LessonMaterials/README.md).
 
 ## Lesson 1: Blink an LED
 

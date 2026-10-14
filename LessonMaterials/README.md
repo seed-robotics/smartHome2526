@@ -1,14 +1,14 @@
-# Lesson Material
+# Lesson Materials
 
-This guide sequences the Smart Home Kit activities and links to the corresponding starter sketches, solutions, wiring diagrams, and kit-guide pages. Start with the [general Arduino guide](../README.md) if you want a refresher on the programming concepts. Each lesson has five progressively harder optional tasks and full code in the [ChallengesAndSolutions guide](../ChallengesAndSolutions/README.md).
+This guide sequences the Smart Home Kit activities and links to the corresponding starter sketches, solutions, wiring diagrams, and kit-guide pages. Start with the [general Arduino guide](../README.md) if you want a refresher on the programming concepts. Each lesson has five progressively harder optional tasks and full code in the [Challenges and Solutions guide](../Challenges/README.md).
 
 ## How to Use Each Lesson
 
 1. Read the short idea first.
 2. Open the linked exercise in the kit guide and look at its wiring picture.
 3. Build the circuit with the USB cable unplugged, then check the wiring before connecting power.
-4. Try the matching starter sketch in [ExercisesAndSolutions/Exercises](../ChallengesAndSolutions/ExercisesAndSolutions/Exercises/). Fill in its TODOs and predict what it will do.
-5. If you get stuck, compare your work with the matching sketch in [ExercisesAndSolutions/Solutions](../ChallengesAndSolutions/ExercisesAndSolutions/Solutions/).
+4. Try the matching starter sketch in [ExercisesAndSolutions/Exercises](../Challenges/ExercisesAndSolutions/Exercises/). Fill in its TODOs and predict what it will do.
+5. If you get stuck, compare your work with the matching sketch in [ExercisesAndSolutions/Solutions](../Challenges/ExercisesAndSolutions/Solutions/).
 
 Some kit activities do not have a starter sketch in `ExercisesAndSolutions/Exercises` yet. For those, follow the instructions and code in the linked kit-guide exercise.
 
@@ -20,7 +20,7 @@ Some kit activities do not have a starter sketch in `ExercisesAndSolutions/Exerc
 
 An LED is an output: the Arduino can set its pin to `HIGH` to turn it on or `LOW` to turn it off. A delay gives your eyes time to see each change. This is your first look at `setup()` and `loop()`.
 
-![Keyestudio LED module connected to the sensor shield](../ChallengesAndSolutions/ExercisesAndSolutions/images/led_blink_wiring.png)
+![Keyestudio LED module connected to the sensor shield](../Challenges/ExercisesAndSolutions/images/led_blink_wiring.png)
 
 [Open the original LED Blink exercise, Project 1, page 33](../../KS0085.pdf#page=33).
 
@@ -32,9 +32,9 @@ An LED is an output: the Arduino can set its pin to `HIGH` to turn it on or `LOW
 
 A button is an input. Pressing it changes the signal the Arduino reads. Try printing the reading so you can watch it change in the Serial Monitor.
 
-![Keyestudio button and LED wiring](../ChallengesAndSolutions/ExercisesAndSolutions/images/button_wiring.png)
+![Keyestudio button and LED wiring](../Challenges/ExercisesAndSolutions/images/button_wiring.png)
 
-[Open the original Button Sensor exercise, Project 4, page 61](../../KS0085.pdf#page=61). [Open the button-reading starter](../ChallengesAndSolutions/ExercisesAndSolutions/Exercises/button_read/button_read.ino) or [its solution](../ChallengesAndSolutions/ExercisesAndSolutions/Solutions/button_read/button_read.ino).
+[Open the original Button Sensor exercise, Project 4, page 61](../../KS0085.pdf#page=61). [Open the button-reading starter](../Challenges/ExercisesAndSolutions/Exercises/button_read/button_read.ino) or [its solution](../Challenges/ExercisesAndSolutions/Solutions/button_read/button_read.ino).
 
 **Fun mission:** Guess whether the button will read `HIGH` or `LOW` before pressing it, then check your guess in the Serial Monitor.
 
@@ -44,7 +44,7 @@ A button is an input. Pressing it changes the signal the Arduino reads. Try prin
 
 Now use an input and an output together. An `if` statement lets the program choose what to do when the button is pressed. A variable can remember whether the LED should be on or off.
 
-[Use the Button Sensor wiring in Project 4, page 61](../../KS0085.pdf#page=61). [Open the button LED exercise](../ChallengesAndSolutions/ExercisesAndSolutions/Exercises/button_led_toggle/button_led_toggle.ino) or [its solution](../ChallengesAndSolutions/ExercisesAndSolutions/Solutions/button_led_toggle/button_led_toggle.ino).
+[Use the Button Sensor wiring in Project 4, page 61](../../KS0085.pdf#page=61). [Open the button LED exercise](../Challenges/ExercisesAndSolutions/Exercises/button_led_toggle/button_led_toggle.ino) or [its solution](../Challenges/ExercisesAndSolutions/Solutions/button_led_toggle/button_led_toggle.ino).
 
 **Fun mission:** Make the LED turn on while you hold the button and turn off when you release it.
 
@@ -56,7 +56,7 @@ Now use an input and an output together. An `if` statement lets the program choo
 
 A photocell changes its electrical signal when the light around it changes. The Arduino turns that signal into a number. Cover the sensor, shine a light on it, and compare the readings.
 
-![Photocell sensor and LED connected to the sensor shield](../ChallengesAndSolutions/ExercisesAndSolutions/images/photocell_wiring.png)
+![Photocell sensor and LED connected to the sensor shield](../Challenges/ExercisesAndSolutions/images/photocell_wiring.png)
 
 [Open the original Photocell Sensor exercise, Project 6, page 70](../../KS0085.pdf#page=70). Read how it works on [page 71](../../KS0085.pdf#page=71); its wiring picture is on [page 72](../../KS0085.pdf#page=72).
 
@@ -68,7 +68,7 @@ A photocell changes its electrical signal when the light around it changes. The 
 
 Choose a threshold number. If the photocell reading is below or above that number, use an `if` statement to change the LED. This is a simple example of a sensor making a decision.
 
-[Use the Photocell Sensor exercise, Project 6, page 70](../../KS0085.pdf#page=70). [Open the light-controlled LED starter](../ChallengesAndSolutions/ExercisesAndSolutions/Exercises/light_sensor_led_control/light_sensor_led_control.ino) or [its solution](../ChallengesAndSolutions/ExercisesAndSolutions/Solutions/light_sensor_led_control/light_sensor_led_control.ino).
+[Use the Photocell Sensor exercise, Project 6, page 70](../../KS0085.pdf#page=70). [Open the light-controlled LED starter](../Challenges/ExercisesAndSolutions/Exercises/light_sensor_led_control/light_sensor_led_control.ino) or [its solution](../Challenges/ExercisesAndSolutions/Solutions/light_sensor_led_control/light_sensor_led_control.ino).
 
 **Fun mission:** Make a simple night-light: the LED turns on when you shade the photocell.
 
@@ -80,7 +80,7 @@ Choose a threshold number. If the photocell reading is below or above that numbe
 
 A passive buzzer makes a sound when the Arduino sends it a repeated signal. `tone(pin, frequency)` chooses the pitch: a bigger frequency number means a higher note. This is sound, not PWM; PWM is saved for Lesson 9.
 
-![Keyestudio passive buzzer wiring](../ChallengesAndSolutions/ExercisesAndSolutions/images/passive_buzzer_wiring.png)
+![Keyestudio passive buzzer wiring](../Challenges/ExercisesAndSolutions/images/passive_buzzer_wiring.png)
 
 [Open the original Passive Buzzer exercise, Project 3, page 48](../../KS0085.pdf#page=48).
 
@@ -92,7 +92,7 @@ A passive buzzer makes a sound when the Arduino sends it a repeated signal. `ton
 
 A list can store several note pitches. A `for` loop can play each note in turn, so you do not need to write the same instruction again and again.
 
-[Use the Passive Buzzer exercise, Project 3, page 48](../../KS0085.pdf#page=48). [Open the note-sequence starter](../ChallengesAndSolutions/ExercisesAndSolutions/Exercises/buzzer_examples/note_sequence/note_sequence.ino) or [its solution](../ChallengesAndSolutions/ExercisesAndSolutions/Solutions/buzzer_examples/note_sequence/note_sequence.ino).
+[Use the Passive Buzzer exercise, Project 3, page 48](../../KS0085.pdf#page=48). [Open the note-sequence starter](../Challenges/ExercisesAndSolutions/Exercises/buzzer_examples/note_sequence/note_sequence.ino) or [its solution](../Challenges/ExercisesAndSolutions/Solutions/buzzer_examples/note_sequence/note_sequence.ino).
 
 **Fun mission:** Change one note in the tune and ask a friend to guess which one changed.
 
@@ -102,7 +102,7 @@ A list can store several note pitches. A `for` loop can play each note in turn, 
 
 Use the photocell reading to choose the buzzer pitch. Now one sensor reading controls a different kind of output: sound instead of light.
 
-[Review Photocell Sensor, Project 6, page 70](../../KS0085.pdf#page=70), and [Passive Buzzer, Project 3, page 48](../../KS0085.pdf#page=48). [Open the light-to-sound starter](../ChallengesAndSolutions/ExercisesAndSolutions/Exercises/light_sensor_buzzer/light_sensor_buzzer.ino) or [its solution](../ChallengesAndSolutions/ExercisesAndSolutions/Solutions/light_sensor_buzzer/light_sensor_buzzer.ino).
+[Review Photocell Sensor, Project 6, page 70](../../KS0085.pdf#page=70), and [Passive Buzzer, Project 3, page 48](../../KS0085.pdf#page=48). [Open the light-to-sound starter](../Challenges/ExercisesAndSolutions/Exercises/light_sensor_buzzer/light_sensor_buzzer.ino) or [its solution](../Challenges/ExercisesAndSolutions/Solutions/light_sensor_buzzer/light_sensor_buzzer.ino).
 
 **Fun mission:** Shade the photocell slowly and listen as the buzzer pitch changes.
 
@@ -114,7 +114,7 @@ Use the photocell reading to choose the buzzer pitch. Now one sensor reading con
 
 This is the first PWM lesson. The Arduino turns the LED on and off very quickly. Changing how long it stays on makes it look brighter or dimmer. On this board, `analogWrite()` uses values from 0 (off) to 255 (brightest).
 
-[Open the original Breathing Light exercise, Project 2, page 40](../../KS0085.pdf#page=40). [Open the RGB fading starter](../ChallengesAndSolutions/ExercisesAndSolutions/Exercises/rgb_lamp_fade/rgb_lamp_fade.ino) or [its solution](../ChallengesAndSolutions/ExercisesAndSolutions/Solutions/rgb_lamp_fade/rgb_lamp_fade.ino).
+[Open the original Breathing Light exercise, Project 2, page 40](../../KS0085.pdf#page=40). [Open the RGB fading starter](../Challenges/ExercisesAndSolutions/Exercises/rgb_lamp_fade/rgb_lamp_fade.ino) or [its solution](../Challenges/ExercisesAndSolutions/Solutions/rgb_lamp_fade/rgb_lamp_fade.ino).
 
 **Fun mission:** Make the LED slowly brighten and dim like a breathing light.
 
@@ -226,8 +226,8 @@ You have learned about inputs, decisions, and outputs. Combine a few sensors and
 
 ## Project Folders
 
-- [ExercisesAndSolutions/Exercises](../ChallengesAndSolutions/ExercisesAndSolutions/Exercises/) has starter sketches with TODO comments.
-- [ExercisesAndSolutions/Solutions](../ChallengesAndSolutions/ExercisesAndSolutions/Solutions/) has completed sketches. Try the exercise before opening its solution.
-- Open an `.ino` sketch from its matching folder in the Arduino IDE. Wiring diagrams and lesson plans are also in [ExercisesAndSolutions](../ChallengesAndSolutions/ExercisesAndSolutions/).
+- [ExercisesAndSolutions/Exercises](../Challenges/ExercisesAndSolutions/Exercises/) has starter sketches with TODO comments.
+- [ExercisesAndSolutions/Solutions](../Challenges/ExercisesAndSolutions/Solutions/) has completed sketches. Try the exercise before opening its solution.
+- Open an `.ino` sketch from its matching folder in the Arduino IDE. Wiring diagrams and lesson plans are also in [ExercisesAndSolutions](../Challenges/ExercisesAndSolutions/).
 
 The first four wiring diagrams are adapted from the Keyestudio KS0085 kit guide.
